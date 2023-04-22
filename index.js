@@ -17,6 +17,10 @@ setTimeout(()=>{
     console.log("run hello selenium")
 },10000)
 
+app.get("/",(req,res)=>{
+    res.send("Yellow there")
+})
+
 app.listen((err)=>{
     if(err){
         console.log(err)
